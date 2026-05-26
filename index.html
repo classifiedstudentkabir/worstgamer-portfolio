@@ -17,7 +17,7 @@
 
   <!-- Navigation Bar -->
   <nav class="glass-panel">
-    <div class="font-display-xl" style="font-size: 24px; tracking-tighter: -0.04em;">STUDIO_NOIR</div>
+    <div class="font-display-xl" style="font-size: 24px; tracking-tighter: -0.04em;">Tahhs_edits</div>
 
     <!-- Nav Links -->
     <div class="nav-links">
@@ -28,9 +28,9 @@
     </div>
 
     <!-- Edition & Sound Controls -->
-    <div style="display: flex; align-items: center; gap: 16px;">
+    <div class="nav-controls" style="display: flex; align-items: center; gap: 16px;">
       <!-- Edition Selector -->
-      <div class="edition-selector-container">
+      <div class="edition-selector-container desktop-only">
         <button class="edition-btn font-label-caps active" data-edition="pro">Pro</button>
         <button class="edition-btn font-label-caps" data-edition="creator">Creator</button>
         <button class="edition-btn font-label-caps" data-edition="fresher">Emerging</button>
@@ -43,19 +43,25 @@
 
       <a href="#contact" class="btn btn-primary font-label-caps magnetic-btn"
         style="padding: 10px 22px; font-size: 11px; display: none;" id="nav-hire-btn">Hire Me</a>
-      <span class="material-symbols-outlined clickable"
-        style="color: var(--on-surface); font-size: 28px; display: block;" class="md-hidden" id="menu-btn">menu</span>
+      <span class="material-symbols-outlined clickable" id="menu-btn">menu</span>
     </div>
   </nav>
 
   <!-- Mobile Menu Dropdown -->
-  <div id="mobile-menu" class="glass-panel"
-    style="position: fixed; top: 80px; left: 16px; right: 16px; z-index: 99; padding: 24px; display: none; flex-direction: column; gap: 20px; border-radius: 12px; background: rgba(17, 17, 25, 0.95);">
-    <a class="font-label-caps" href="#work" style="text-decoration: none; color: var(--on-surface);">Portfolio</a>
-    <a class="font-label-caps" href="#services" style="text-decoration: none; color: var(--on-surface);">Reels</a>
-    <a class="font-label-caps" href="#process" style="text-decoration: none; color: var(--on-surface);">Process</a>
-    <a class="font-label-caps" href="#about" style="text-decoration: none; color: var(--on-surface);">About</a>
-    <a class="btn btn-primary font-label-caps" href="#contact" style="width: 100%; text-align: center;">Hire Me</a>
+  <div id="mobile-menu" class="glass-panel">
+    <a class="font-label-caps" href="#work">Portfolio</a>
+    <a class="font-label-caps" href="#services">Reels</a>
+    <a class="font-label-caps" href="#process">Process</a>
+    <a class="font-label-caps" href="#about">About</a>
+    
+    <!-- Mobile Edition Selector -->
+    <div class="edition-selector-container mobile-only">
+      <button class="edition-btn font-label-caps active" data-edition="pro">Pro</button>
+      <button class="edition-btn font-label-caps" data-edition="creator">Creator</button>
+      <button class="edition-btn font-label-caps" data-edition="fresher">Emerging</button>
+    </div>
+    
+    <a class="btn btn-primary font-label-caps" href="#contact" id="mobile-hire-btn" style="width: 100%; text-align: center; display: none;">Hire Me</a>
   </div>
 
   <!-- Hero Section -->
@@ -77,7 +83,7 @@
 
       <!-- Description -->
       <p class="reveal active font-body-lg text-on-surface-variant" id="hero-description"
-        style="max-w: 680px; margin-bottom: 48px;">
+        style="max-width: 680px; margin-bottom: 48px;">
         Cinematic storytelling meets high-retention editing. I transform raw footage into professional narratives that
         resonate with global audiences.
       </p>
@@ -106,19 +112,21 @@
     <div class="font-label-caps partners-title" id="partners-label">Global Partners &amp; Clients</div>
     <div class="marquee">
       <div class="marquee-track">
-        <div class="marquee-item">VELOCITY</div>
-        <div class="marquee-item">CHRONOS</div>
-        <div class="marquee-item">AETHER</div>
-        <div class="marquee-item">NEON FLIX</div>
-        <div class="marquee-item">ZENITH</div>
-        <div class="marquee-item">ONYX HUB</div>
+        <div class="marquee-item">PREMIERE PRO</div>
+        <div class="marquee-item">AFTER EFFECTS</div>
+        <div class="marquee-item">DAVINCI RESOLVE</div>
+        <div class="marquee-item">PHOTOSHOP</div>
+        <div class="marquee-item">BLENDER</div>
+        <div class="marquee-item">AVID MEDIA COMPOSER</div>
+        <div class="marquee-item">AUDITION</div>
         <!-- Duplicate for loop -->
-        <div class="marquee-item">VELOCITY</div>
-        <div class="marquee-item">CHRONOS</div>
-        <div class="marquee-item">AETHER</div>
-        <div class="marquee-item">NEON FLIX</div>
-        <div class="marquee-item">ZENITH</div>
-        <div class="marquee-item">ONYX HUB</div>
+        <div class="marquee-item">PREMIERE PRO</div>
+        <div class="marquee-item">AFTER EFFECTS</div>
+        <div class="marquee-item">DAVINCI RESOLVE</div>
+        <div class="marquee-item">PHOTOSHOP</div>
+        <div class="marquee-item">BLENDER</div>
+        <div class="marquee-item">AVID MEDIA COMPOSER</div>
+        <div class="marquee-item">AUDITION</div>
       </div>
     </div>
   </section>
@@ -281,7 +289,7 @@
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHv1xS8NKv0-P6GUILOezVlOJt8ohvYAtKA4i7hfJEV34m7TfGGZl24k3APfkSFJ9LWejX1E7Jl7Xc7dfc5hb0aUDCnjlLANO-3LFaAOnIvYlAPWfis1BG2cmwbli_T4qEcerilOivuv8NxN2Mq4_lGLNRcH0XVrnJ9oZrml8ztly-mcv885xnV2gksaAZu5ANI1gtzLWmDuyTkHFoUMwjv22RtVtDwxF7CcUzq7_Yz48vizYzx1J7SjzI4MLXcT9kSOXBNfk6-Jdk"
             alt="Cinematic chrome centerpiece object" style="max-width: 520px; width: 100%;">
         </div>
-        <p class="font-body-lg text-on-surface-variant" style="max-w: 600px; margin-top: 24px;">
+        <p class="font-body-lg text-on-surface-variant" style="max-width: 600px; margin-top: 24px;">
           Pushing the boundaries of digital narrative through immersive visuals and high-fidelity motion graphics.
         </p>
       </div>

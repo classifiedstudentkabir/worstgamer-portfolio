@@ -6,7 +6,7 @@ const editionData = {
     heroDescription: "Cinematic storytelling meets high-retention editing. I transform raw footage into professional narratives that resonate with global audiences.",
     heroPrimaryCta: "View Work",
     heroSecondaryCta: "Hire Me",
-    partnersLabel: "Global Partners &amp; Clients",
+    partnersLabel: "Professional Editing Suite &amp; Tools",
     portfolioBadge: "Selected Works",
     portfolioTitle: "Precision in Every Frame",
     bentoMainTitle: "The Urban Explorer Docu-Series",
@@ -71,7 +71,7 @@ const editionData = {
     heroDescription: "I believe editing is visual empathy. I help personal brands and visual creators translate their unique story and values into rhythmic, high-retention video assets.",
     heroPrimaryCta: "Watch Reels",
     heroSecondaryCta: "Connect",
-    partnersLabel: "Collaborative Creators &amp; Brands",
+    partnersLabel: "Creative Software &amp; Toolkit",
     portfolioBadge: "Creator Portfolio",
     portfolioTitle: "Editing with Empathy &amp; Focus",
     bentoMainTitle: "Scaling Personal Brands via Reels",
@@ -136,7 +136,7 @@ const editionData = {
     heroDescription: "Every great creator started with a single frame. I'm here to help you bridge the gap between your vision and professional reality with editing that honors your unique voice.",
     heroPrimaryCta: "See What's Possible",
     heroSecondaryCta: "Let's Chat",
-    partnersLabel: "Empowering Brands &amp; Creators",
+    partnersLabel: "Editing Software &amp; Tools I Master",
     portfolioBadge: "Creative Potential",
     portfolioTitle: "Showcasing Your Best Work",
     bentoMainTitle: "Finding Your Narrative",
@@ -665,6 +665,10 @@ const switchEdition = (editionKey) => {
     if (navHireBtn) {
       navHireBtn.style.display = (editionKey === 'pro') ? 'block' : 'none';
     }
+    const mobileHireBtn = document.getElementById('mobile-hire-btn');
+    if (mobileHireBtn) {
+      mobileHireBtn.style.display = (editionKey === 'pro') ? 'block' : 'none';
+    }
 
     // Fade-in dynamic containers
     setTimeout(() => {
@@ -695,12 +699,17 @@ const editionSelectorBtns = document.querySelectorAll('.edition-btn');
 editionSelectorBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
-    if (btn.classList.contains('active')) return;
-    
-    editionSelectorBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    
     const targetEdition = btn.getAttribute('data-edition');
+    
+    // Set active class on all buttons matching targetEdition, and remove from others
+    editionSelectorBtns.forEach(b => {
+      if (b.getAttribute('data-edition') === targetEdition) {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+    
     switchEdition(targetEdition);
   });
 });
@@ -711,21 +720,29 @@ const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   playSound('click');
-  const isClosed = mobileMenu.style.display === 'none' || !mobileMenu.style.display;
-  mobileMenu.style.display = isClosed ? 'flex' : 'none';
+  const isOpen = mobileMenu.classList.contains('active');
+  if (isOpen) {
+    mobileMenu.classList.remove('active');
+    menuBtn.textContent = 'menu';
+  } else {
+    mobileMenu.classList.add('active');
+    menuBtn.textContent = 'close';
+  }
 });
 
 // Hide mobile menu on link clicks
 mobileMenu.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.style.display = 'none';
+    mobileMenu.classList.remove('active');
+    menuBtn.textContent = 'menu';
   });
 });
 
 // Close Mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-  if (mobileMenu.style.display === 'flex' && !mobileMenu.contains(e.target) && e.target !== menuBtn) {
-    mobileMenu.style.display = 'none';
+  if (mobileMenu.classList.contains('active') && !mobileMenu.contains(e.target) && e.target !== menuBtn) {
+    mobileMenu.classList.remove('active');
+    menuBtn.textContent = 'menu';
   }
 });
 
