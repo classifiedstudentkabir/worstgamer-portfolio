@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDIO NOIR | Premium Video Editing &amp; Cinematic Storytelling</title>
+  <script type="module" crossorigin src="/assets/index-Cg2t-_qz.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DV3xAaSO.css">
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain-overlay"></div>
+  
+  <!-- Interactive Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="glass-panel">
+    <div class="font-display-xl" style="font-size: 24px; tracking-tighter: -0.04em;">STUDIO_NOIR</div>
+    
+    <!-- Nav Links -->
+    <div class="nav-links">
+      <a class="font-label-caps active" href="#work" id="nav-work">Portfolio</a>
+      <a class="font-label-caps" href="#services" id="nav-services">Reels</a>
+      <a class="font-label-caps" href="#process" id="nav-process">Process</a>
+      <a class="font-label-caps" href="#about" id="nav-about">About</a>
+    </div>
+
+    <!-- Edition & Sound Controls -->
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <!-- Edition Selector -->
+      <div class="edition-selector-container">
+        <button class="edition-btn font-label-caps active" data-edition="pro">Pro</button>
+        <button class="edition-btn font-label-caps" data-edition="creator">Creator</button>
+        <button class="edition-btn font-label-caps" data-edition="fresher">Emerging</button>
+      </div>
+
+      <!-- Sound Toggle -->
+      <button class="sound-toggle-container font-label-caps" id="sound-toggle-btn">
+        <span class="material-symbols-outlined" style="font-size: 18px;" id="sound-icon">volume_off</span>
+      </button>
+
+      <a href="#contact" class="btn btn-primary font-label-caps magnetic-btn" style="padding: 10px 22px; font-size: 11px; display: none;" id="nav-hire-btn">Hire Me</a>
+      <span class="material-symbols-outlined clickable" style="color: var(--on-surface); font-size: 28px; display: block;" class="md-hidden" id="menu-btn">menu</span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="glass-panel" style="position: fixed; top: 80px; left: 16px; right: 16px; z-index: 99; padding: 24px; display: none; flex-direction: column; gap: 20px; border-radius: 12px; background: rgba(17, 17, 25, 0.95);">
+    <a class="font-label-caps" href="#work" style="text-decoration: none; color: var(--on-surface);">Portfolio</a>
+    <a class="font-label-caps" href="#services" style="text-decoration: none; color: var(--on-surface);">Reels</a>
+    <a class="font-label-caps" href="#process" style="text-decoration: none; color: var(--on-surface);">Process</a>
+    <a class="font-label-caps" href="#about" style="text-decoration: none; color: var(--on-surface);">About</a>
+    <a class="btn btn-primary font-label-caps" href="#contact" style="width: 100%; text-align: center;">Hire Me</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <!-- Badge -->
+      <div class="reveal active status-badge">
+        <span class="pip"></span>
+        <span class="font-label-caps" style="font-size: 10px; color: var(--on-surface-variant);" id="hero-badge-text">Available for New Projects</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="reveal active font-display-xl" id="hero-headline" style="margin-bottom: 32px;">
+        I Create Videos That <span class="text-primary" style="font-style: italic;">Hold Attention</span> &amp; Drive Results
+      </h1>
+
+      <!-- Description -->
+      <p class="reveal active font-body-lg text-on-surface-variant" id="hero-description" style="max-w: 680px; margin-bottom: 48px;">
+        Cinematic storytelling meets high-retention editing. I transform raw footage into professional narratives that resonate with global audiences.
+      </p>
+
+      <!-- CTAs -->
+      <div class="reveal active hero-cta">
+        <a class="btn btn-primary font-label-caps magnetic-btn" href="#work" id="hero-primary-cta">View Work</a>
+        <a class="btn btn-secondary font-label-caps magnetic-btn" href="#contact" id="hero-secondary-cta">Hire Me</a>
+      </div>
+    </div>
+
+    <!-- Main Mockup Video Preview -->
+    <div class="reveal active hero-mockup" style="margin-top: 80px;">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqwRKGtWrS-9t6CM5uGzGYUYHXk7xb6DHr-Io3THIt3iVdyelQIkOOj-ZMHFCazJZmOubGDJ0AfXQnKJ441QnrpPLYSc-Ci7Hu08bCGAiVifphCUiMViVMVKT4LNW1lBRPGhljb4njt_6nO4g1PhcTzyhuHMtO1iKtQAnyV1nTqHdXtVEO52U2QJ6R13NDTyOccu9Z3neimsnpsAYcnDnIaWH4ii3hCpPQn7GofMMD9iQDFXlK70nDWl7ctkDQc76w7EpCpkGt4sBu" alt="Cinematic Film Studio Preview" id="hero-preview-img">
+      <button class="play-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Play Studio Reel">
+        <span class="material-symbols-outlined">play_arrow</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Partner Logos Ticker Marquee -->
+  <section class="partners">
+    <div class="font-label-caps partners-title" id="partners-label">Global Partners &amp; Clients</div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <div class="marquee-item">VELOCITY</div>
+        <div class="marquee-item">CHRONOS</div>
+        <div class="marquee-item">AETHER</div>
+        <div class="marquee-item">NEON FLIX</div>
+        <div class="marquee-item">ZENITH</div>
+        <div class="marquee-item">ONYX HUB</div>
+        <!-- Duplicate for loop -->
+        <div class="marquee-item">VELOCITY</div>
+        <div class="marquee-item">CHRONOS</div>
+        <div class="marquee-item">AETHER</div>
+        <div class="marquee-item">NEON FLIX</div>
+        <div class="marquee-item">ZENITH</div>
+        <div class="marquee-item">ONYX HUB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Works Portfolio Bento Grid -->
+  <section class="portfolio container" id="work">
+    <div class="reveal section-header">
+      <div>
+        <span class="font-label-caps text-primary" style="margin-bottom: 12px; display: block;" id="portfolio-badge">Selected Works</span>
+        <h2 class="font-headline-lg" id="portfolio-title">Precision in Every Frame</h2>
+      </div>
+      <a class="font-label-caps explore-link" href="#work" id="portfolio-explore">Explore All Projects</a>
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="bento-grid">
+      <!-- Main Bento Card (8 columns, 2 rows) -->
+      <div class="reveal bento-card col-span-8 row-span-2">
+        <div class="bento-card-inner">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYcNtvdJradwGgEyTGxKYNLERGH4f3hg4y_0S8OpvJSOa-Zz4I5koCrP8lgesjQBCO8hspKn9uegYIeaGnFzkhx-3c0Eo5PP_c8VhAYbdoqW51gjLM-1Ndswp2hyhzdH-cCac9OBSKxR5nG1oQyiT1tvf0_1Su5amp629r2rs-6lWSrLrRCR88cxzAQPDoEoZgzIZti17dNHE0aCnOI918pczytDmS2RBoFm_zDJ8-CjqE1SBACKazhTEAVVg8diOOPkE4rx1xWpTm" alt="The Urban Explorer Docu-Series Showcase">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <div class="tag-container">
+              <span class="font-label-caps tag" style="font-size: 10px;">YouTube Strategy</span>
+              <span class="font-label-caps tag" style="font-size: 10px;">Cinematic Narrative</span>
+            </div>
+            <h3 class="font-headline-md" style="color: #fff; margin-bottom: 8px;" id="bento-main-title">The Urban Explorer Docu-Series</h3>
+            <p class="font-body-md text-on-surface-variant" style="max-w: 480px;" id="bento-main-desc">How I achieved 1.2M views through rhythmic editing and visual pacing.</p>
+          </div>
+          <!-- Play Trigger -->
+          <div class="play-overlay">
+            <button class="play-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" style="position: static; transform: none; width: 68px; height: 68px;">
+              <span class="material-symbols-outlined" style="font-size: 28px;">play_arrow</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bento Card 2 (4 columns, 1 row) -->
+      <div class="reveal bento-card col-span-4 row-span-1">
+        <div class="bento-card-inner">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWPhHPwSzA2tkmqPQifoUkmkIpz8MWXRmveie6dvydrsQcaqGsJojX86gFx8Td5yw34pLdLFLCffbU0xNJD7N7_DyQk1FysH4zG7ptvdvYg8sXYbWjmz1o4G3SvngBgReFD9rB6QLoSloY4-YRVbUS_3Dv4xfl68bfno1EM46FHbd_pA8Ab0pbobJR7JO6cm380tW6aTQIiWU7HoKZL73ECx4f02C-9uV73k18dMLqJtpr7TfqvaxkXBRG6Z5CYw3QASZ1gLQwUpjw" alt="Talking Head Setup Showcase">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="font-label-caps text-primary" style="font-size: 10px; margin-bottom: 8px; display: block;" id="bento-c2-badge">Talking Head Editing</span>
+            <h4 class="font-headline-md" style="font-size: 24px; color: #fff;">Scale With Video</h4>
+          </div>
+          <!-- Play Trigger -->
+          <div class="play-overlay">
+            <button class="play-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" style="position: static; transform: none; width: 60px; height: 60px;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">play_arrow</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bento Card 3 (4 columns, 1 row) -->
+      <div class="reveal bento-card col-span-4 row-span-1">
+        <div class="bento-card-inner">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4sFJCRViVOyCnAmQ_TSXAZRTHSXSggOyO4ZPHrJbj9_hUFpM6Ta7c9b9oShYmV168vx-NmjmX4mZ6SPSuQRK--T9vDeHv8VfbY8JOFZtFK5H2UGytfFr7AUrj__mWaeSEA3L_TU-F42E4yOM-8Oj2H4Ul2KnfVZj8B2-i7WGGX4BEfBFCWjK5z420k38bmehBKZ-n1-_iI3F-yx8LYGBIpNKF6SMMpMJN5krAinI9V7c5gq1Y_i1NrProc0Ub5z9XW-fMZcT7PO3r" alt="Commercial Graphics Showcase">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="font-label-caps text-primary" style="font-size: 10px; margin-bottom: 8px; display: block;" id="bento-c3-badge">Brand Commercials</span>
+            <h4 class="font-headline-md" style="font-size: 24px; color: #fff;">Luxury Aesthetics</h4>
+          </div>
+          <!-- Play Trigger -->
+          <div class="play-overlay">
+            <button class="play-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" style="position: static; transform: none; width: 60px; height: 60px;">
+              <span class="material-symbols-outlined" style="font-size: 24px;">play_arrow</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Showcase Section (Toggles based on Edition) -->
+  <section class="dynamic-showcase">
+    <!-- PRO/DEFAULT: Featured Shoots & 3D Centerpiece -->
+    <div id="showcase-pro" class="dynamic-container container active">
+      <div class="reveal section-header" style="justify-content: center; text-align: center; align-items: center; margin-bottom: 80px;">
+        <div>
+          <span class="font-label-caps text-primary" style="margin-bottom: 12px; display: block;">On Location</span>
+          <h2 class="font-headline-lg">Featured Shoots</h2>
+        </div>
+      </div>
+
+      <!-- Shoots Grid -->
+      <div class="shoots-grid" style="margin-bottom: 120px;">
+        <!-- Card 1 -->
+        <div class="reveal shoot-card">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYcNtvdJradwGgEyTGxKYNLERGH4f3hg4y_0S8OpvJSOa-Zz4I5koCrP8lgesjQBCO8hspKn9uegYIeaGnFzkhx-3c0Eo5PP_c8VhAYbdoqW51gjLM-1Ndswp2hyhzdH-cCac9OBSKxR5nG1oQyiT1tvf0_1Su5amp629r2rs-6lWSrLrRCR88cxzAQPDoEoZgzIZti17dNHE0aCnOI918pczytDmS2RBoFm_zDJ8-CjqE1SBACKazhTEAVVg8diOOPkE4rx1xWpTm" alt="Desert Mirage: Couture Collection">
+          <div class="shoot-card-overlay"></div>
+          <div class="shoot-card-content">
+            <h3 class="font-headline-md" style="font-size: 22px; color: #fff; margin-bottom: 20px;">Desert Mirage: Couture Collection</h3>
+            <button class="shoot-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <span class="material-symbols-outlined">play_arrow</span>
+              <span class="btn-text-play">Play Preview</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="reveal shoot-card" style="transition-delay: 100ms;">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4sFJCRViVOyCnAmQ_TSXAZRTHSXSggOyO4ZPHrJbj9_hUFpM6Ta7c9b9oShYmV168vx-NmjmX4mZ6SPSuQRK--T9vDeHv8VfbY8JOFZtFK5H2UGytfFr7AUrj__mWaeSEA3L_TU-F42E4yOM-8Oj2H4Ul2KnfVZj8B2-i7WGGX4BEfBFCWjK5z420k38bmehBKZ-n1-_iI3F-yx8LYGBIpNKF6SMMpMJN5krAinI9V7c5gq1Y_i1NrProc0Ub5z9XW-fMZcT7PO3r" alt="Velocity: The Future of Speed">
+          <div class="shoot-card-overlay"></div>
+          <div class="shoot-card-content">
+            <h3 class="font-headline-md" style="font-size: 22px; color: #fff; margin-bottom: 20px;">Velocity: The Future of Speed</h3>
+            <button class="shoot-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <span class="material-symbols-outlined">play_arrow</span>
+              <span class="btn-text-play">Play Preview</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="reveal shoot-card" style="transition-delay: 200ms;">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWPhHPwSzA2tkmqPQifoUkmkIpz8MWXRmveie6dvydrsQcaqGsJojX86gFx8Td5yw34pLdLFLCffbU0xNJD7N7_DyQk1FysH4zG7ptvdvYg8sXYbWjmz1o4G3SvngBgReFD9rB6QLoSloY4-YRVbUS_3Dv4xfl68bfno1EM46FHbd_pA8Ab0pbobJR7JO6cm380tW6aTQIiWU7HoKZL73ECx4f02C-9uV73k18dMLqJtpr7TfqvaxkXBRG6Z5CYw3QASZ1gLQwUpjw" alt="Culinary Arts: Masterclass">
+          <div class="shoot-card-overlay"></div>
+          <div class="shoot-card-content">
+            <h3 class="font-headline-md" style="font-size: 22px; color: #fff; margin-bottom: 20px;">Culinary Arts: Masterclass</h3>
+            <button class="shoot-btn clickable" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <span class="material-symbols-outlined">play_arrow</span>
+              <span class="btn-text-play">Play Preview</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cinematic Dimension 3D centerpiece -->
+      <div class="reveal dimension-center" style="margin-top: 100px;">
+        <span class="font-label-caps text-primary" style="margin-bottom: 12px; display: block;">Visual Evolution</span>
+        <h2 class="font-headline-lg">The Cinematic Dimension</h2>
+        <div class="floating-centerpiece">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHv1xS8NKv0-P6GUILOezVlOJt8ohvYAtKA4i7hfJEV34m7TfGGZl24k3APfkSFJ9LWejX1E7Jl7Xc7dfc5hb0aUDCnjlLANO-3LFaAOnIvYlAPWfis1BG2cmwbli_T4qEcerilOivuv8NxN2Mq4_lGLNRcH0XVrnJ9oZrml8ztly-mcv885xnV2gksaAZu5ANI1gtzLWmDuyTkHFoUMwjv22RtVtDwxF7CcUzq7_Yz48vizYzx1J7SjzI4MLXcT9kSOXBNfk6-Jdk" alt="Cinematic chrome centerpiece object" style="max-width: 520px; width: 100%;">
+        </div>
+        <p class="font-body-lg text-on-surface-variant" style="max-w: 600px; margin-top: 24px;">
+          Pushing the boundaries of digital narrative through immersive visuals and high-fidelity motion graphics.
+        </p>
+      </div>
+    </div>
+
+    <!-- CREATOR/EMERGING: Creative Sanctuary -->
+    <div id="showcase-creator" class="dynamic-container container">
+      <div class="reveal section-header" style="justify-content: center; text-align: center; align-items: center; margin-bottom: 80px;">
+        <div>
+          <span class="font-label-caps text-primary" style="margin-bottom: 12px; display: block;">Where Focus Meets Flow</span>
+          <h2 class="font-headline-lg">The Creative Sanctuary</h2>
+        </div>
+      </div>
+
+      <div class="reveal sanctuary-mockup">
+        <!-- Desk mockup with timeline -->
+        <img src="https://lh3.googleusercontent.com/aida/ADBb0uiDi6wfT_ctC6EeA_nGufzTtIweTTFf8d9qMCGRawMscrua1YUQt3L1nf3VDdcMSSJ4ycMkFwpbi2BkdiXXUKqR_uabFqdspHLOVqwozhShf56o_YLhVATSf1Eafat8dJbIkzIBxM1UHW3b6sNV0pQq-DwAyFjUVrJc9yHicBnyVplz_xSbuNlWuPR9Ud7Pid6VDgc90VsIgzkIGs-h9UpT7ZJXVQPrvJ_JXFxwgjCegCwhWgzGssdThnil" alt="Creative Sanctuary Setup">
+      </div>
+
+      <div class="reveal text-center" style="margin-top: 48px;">
+        <p class="font-body-lg text-on-surface-variant" style="max-w: 600px; margin: 0 auto;">
+          Great stories start in a focused space. This is where the magic happens, and where your ideas are carefully refined into digital masterpieces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-grid container">
+      <div class="reveal stat-item">
+        <div class="stat-value" id="stat-1-val">500+</div>
+        <div class="font-label-caps" style="color: var(--outline);" id="stat-1-label">Videos Delivered</div>
+      </div>
+      <div class="reveal stat-item" style="transition-delay: 100ms;">
+        <div class="stat-value" id="stat-2-val">12M+</div>
+        <div class="font-label-caps" style="color: var(--outline);" id="stat-2-label">Total Views</div>
+      </div>
+      <div class="reveal stat-item" style="transition-delay: 200ms;">
+        <div class="stat-value" id="stat-3-val">15+</div>
+        <div class="font-label-caps" style="color: var(--outline);" id="stat-3-label">Active Clients</div>
+      </div>
+      <div class="reveal stat-item" style="transition-delay: 300ms;">
+        <div class="stat-value" id="stat-4-val">99%</div>
+        <div class="font-label-caps" style="color: var(--outline);" id="stat-4-label">Satisfaction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services container" id="services">
+    <div class="reveal text-center" style="margin-bottom: 80px;">
+      <span class="font-label-caps text-primary" style="margin-bottom: 12px; display: block;" id="services-badge">Specialized Services</span>
+      <h2 class="font-headline-lg" id="services-title">Built for Impact</h2>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="reveal service-card glass-panel">
+        <div class="service-icon">
+          <span class="material-symbols-outlined">record_voice_over</span>
+        </div>
+        <h3 class="font-headline-md" id="service-1-title">Talking Head Editing</h3>
+        <p class="font-body-md" id="service-1-desc">Optimized for LinkedIn, YouTube, and X. I focus on pacing, jump-cut precision, and narrative flow to keep viewers hooked from the first frame.</p>
+        <ul class="service-bullets font-body-md" id="service-1-bullets">
+          <li>Dynamic Captions</li>
+          <li>Multi-cam Syncing</li>
+          <li>Engagement Hooks</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="reveal service-card glass-panel" style="transition-delay: 100ms;">
+        <div class="service-icon">
+          <span class="material-symbols-outlined">movie_edit</span>
+        </div>
+        <h3 class="font-headline-md" id="service-2-title">Commercial Motion</h3>
+        <p class="font-body-md" id="service-2-desc">High-end product videos and brand commercials. I blend 2D motion graphics with high-quality sound design for a premium finish.</p>
+        <ul class="service-bullets font-body-md" id="service-2-bullets">
+          <li>Color Grading</li>
+          <li>Custom Motion GFx</li>
+          <li>Sound Mastery</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="reveal service-card glass-panel" style="transition-delay: 200ms;">
+        <div class="service-icon">
+          <span class="material-symbols-outlined">speed</span>
+        </div>
+        <h3 class="font-headline-md" id="service-3-title">Viral Short Form</h3>
+        <p class="font-body-md" id="service-3-desc">TikTok, Reels, and Shorts designed for the algorithm. Aggressive pacing and visual retention techniques to boost reach.</p>
+        <ul class="service-bullets font-body-md" id="service-3-bullets">
+          <li>9:16 Optimization</li>
+          <li>Trending Styles</li>
+          <li>Fast Turnaround</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-grid container">
+      <!-- Media/Portrait Column -->
+      <div class="reveal about-media">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxKYwg9dtrxohyGRw_AjIRK5w7Pb-oebhlQAB9Xw1PVfwFG_TF1mfJlSI6DP4PgHdbR6tGdKhv8JlW5zd8_072aq7-t_DuT-8CpNUsTgFFkF6FJoooN6nZgXRnv9hU-MSJXycF0_bKyF7xENj27xd2arel2KNWG-iC2hg3KGiKeQ9u3A9irS-ZlQsmrR6vrbR10aD0GCoj1uuptv2urCrkOC4TAJwP69ziFg1RxE9Wa2ojhqQRjoVcm9MhwFPmtZzAtXAWnjrceJCY" alt="About the Creator" id="about-img">
+      </div>
+
+      <!-- Description Column -->
+      <div class="reveal about-content">
+        <span class="font-label-caps text-primary" id="about-badge">About the Creator</span>
+        <h2 class="font-headline-lg" id="about-title">Mastering the Art of the Cut</h2>
+        <div class="about-text font-body-lg" id="about-text-content">
+          <p>I believe every piece of content is a chance to tell a story that matters. With over 8 years in the cutting room, I've collaborated with industry leaders to refine their digital presence through cinematic precision.</p>
+          <p>My approach isn't just about making things look "cool"—it's about understanding viewer psychology. I analyze retention graphs, study platform trends, and apply classic filmmaking principles to modern digital formats.</p>
+          <p>Based in New York, working globally. I help creators turn complex ideas into digestible, high-impact video assets.</p>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-val" id="about-stat-1-val">08+</span>
+            <span class="about-stat-label" id="about-stat-1-label">Years Exp.</span>
+          </div>
+          <div class="divider"></div>
+          <div class="about-stat">
+            <span class="about-stat-val" id="about-stat-2-val">NY</span>
+            <span class="about-stat-label" id="about-stat-2-label">Location</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pipeline/Process Section -->
+  <section class="process container" id="process">
+    <div class="reveal text-center" style="margin-bottom: 80px;">
+      <span class="font-label-caps text-primary" style="margin-bottom: 12px; display: block;" id="process-badge">The Pipeline</span>
+      <h2 class="font-headline-lg" id="process-title">From Raw to Refined</h2>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="process-grid">
+      <!-- Step 1 -->
+      <div class="reveal process-step">
+        <div class="process-num">
+          <span>01</span>
+        </div>
+        <h3 class="font-headline-md" id="process-step-1-title">Strategy &amp; Vision</h3>
+        <p class="font-body-md" id="process-step-1-desc">We align on your goals, target audience, and visual style before the first frame is cut.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="reveal process-step" style="transition-delay: 100ms;">
+        <div class="process-num">
+          <span>02</span>
+        </div>
+        <h3 class="font-headline-md" id="process-step-2-title">The Craft</h3>
+        <p class="font-body-md" id="process-step-2-desc">Intensive editing, color grading, and sound design. This is where the magic happens.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="reveal process-step" style="transition-delay: 200ms;">
+        <div class="process-num">
+          <span>03</span>
+        </div>
+        <h3 class="font-headline-md" id="process-step-3-title">Final Delivery</h3>
+        <p class="font-body-md" id="process-step-3-desc">Seamless revision cycles and final delivery in all required platform formats.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="testimonial-wrapper container">
+      <div class="reveal testimonial-card glass-panel">
+        <span class="material-symbols-outlined quote-icon">format_quote</span>
+        <div class="stars">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <h3 class="font-headline-md testimonial-text" id="testimonial-quote">
+          "Studio Noir transformed our brand's video content. The level of detail and cinematic pacing resulted in a 40% increase in retention. Truly a master of the craft."
+        </h3>
+        <div class="author-block">
+          <div class="author-img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZpG7tCkM4WfMddvOdp76BWU0uJyTrik7UoE-m985273jB4r9hBYgZwtTYVA_Kz_W6XHBolTVmSJDIvBphoVyoHpICi8s5hDFMTVIhg9tBUjHy5iQoJIgTfbPm55xbW7o5u3OTYl5A7ghBmPjDfCrtNxUpVED68-h8yxKNOMPYsBMkNya8MgfqUb2gw-fa9zm454MuJA17AmyNXONH7crYpwOopxWa5N9ARFt_52CiSbYiNr1u3mlyucewNTRmQY6pUq8PtF3JmBXN" alt="Alex Sterling Portrait">
+          </div>
+          <div>
+            <div class="author-name" id="testimonial-author">Alex Sterling</div>
+            <div class="author-title" id="testimonial-title">CEO, Sterling Digital</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact container" id="contact">
+    <div class="contact-grid">
+      <!-- Info Column -->
+      <div class="reveal contact-info">
+        <h2 class="font-display-xl" id="contact-heading">Let’s Create Something <span class="text-gradient">Cinematic</span></h2>
+        <p class="font-body-lg text-on-surface-variant" id="contact-subheading">Ready to elevate your content? Fill out the form or reach out directly via email for high-priority projects.</p>
+        
+        <div class="contact-links">
+          <a href="mailto:hello@studionoir.tv" class="contact-link-item">
+            <div class="contact-icon">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <span class="font-body-lg">hello@studionoir.tv</span>
+          </a>
+          <a href="#" class="contact-link-item">
+            <div class="contact-icon">
+              <span class="material-symbols-outlined">alternate_email</span>
+            </div>
+            <span class="font-body-lg">@studionoir_edits</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="reveal contact-form glass-panel">
+        <form id="portfolio-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="font-label-caps" style="font-size: 10px; color: var(--outline);" id="form-label-name">Full Name</label>
+              <input type="text" placeholder="John Doe" required id="form-input-name">
+            </div>
+            <div class="form-group">
+              <label class="font-label-caps" style="font-size: 10px; color: var(--outline);" id="form-label-email">Email Address</label>
+              <input type="email" placeholder="john@example.com" required id="form-input-email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="font-label-caps" style="font-size: 10px; color: var(--outline);" id="form-label-type">Project Type</label>
+            <select id="form-input-type">
+              <!-- Dynamically populated options depending on edition -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="font-label-caps" style="font-size: 10px; color: var(--outline);" id="form-label-details">Project Details</label>
+            <textarea placeholder="Tell me about your vision..." rows="4" required id="form-input-details"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary font-label-caps submit-btn magnetic-btn" id="form-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-logo">STUDIO NOIR</div>
+      <div class="footer-links">
+        <a href="#" class="font-body-md">Instagram</a>
+        <a href="#" class="font-body-md">Vimeo</a>
+        <a href="#" class="font-body-md">LinkedIn</a>
+        <a href="#contact" class="font-body-md">Contact</a>
+      </div>
+      <div class="footer-copyright font-body-md" id="footer-copyright">© 2024 STUDIO NOIR. ALL RIGHTS RESERVED.</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Video Player Overlay Modal -->
+  <div id="video-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close clickable" id="modal-close-btn">
+        <span class="material-symbols-outlined" style="font-size: 36px;">close</span>
+      </button>
+      <div class="modal-video-container" id="video-player-container">
+        <!-- Iframe or Video elements loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
