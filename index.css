@@ -648,45 +648,10 @@ nav {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Stats Section */
-.stats {
-  padding: 80px 0;
-  background: var(--surface-container-low);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-@media (min-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.stat-value {
-  font-family: var(--font-headline);
-  font-size: clamp(36px, 5vw, 64px);
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 8px;
-  line-height: 1;
-}
 
 /* Dynamic Section (Shoots & Sanctuary) */
 .dynamic-showcase {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .dynamic-container {
@@ -771,33 +736,6 @@ nav {
   box-shadow: 0 0 15px rgba(160, 202, 255, 0.4);
 }
 
-/* 3D dimension centerpiece */
-.dimension-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.floating-centerpiece {
-  margin: 60px 0;
-  position: relative;
-}
-
-.floating-centerpiece img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  animation: float-anim 6s ease-in-out infinite;
-  filter: drop-shadow(0 0 40px rgba(77, 166, 255, 0.45));
-}
-
-@keyframes float-anim {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(2deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
-}
 
 /* Creative Sanctuary workspace mockup */
 .sanctuary-mockup {
@@ -818,7 +756,7 @@ nav {
 
 /* Services Section */
 .services {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .services-grid {
@@ -1412,9 +1350,6 @@ footer {
     transform: none !important;
     opacity: 1 !important;
   }
-  .floating-centerpiece img {
-    animation: none !important;
-  }
   #cursor-glow {
     display: none !important;
   }
@@ -1658,9 +1593,6 @@ footer {
     padding: 60px 0;
   }
 
-  .stats-grid {
-    gap: 24px;
-  }
 
   /* Shoot cards grid spacing */
   .shoots-grid {
@@ -1672,14 +1604,6 @@ footer {
     padding: 24px;
   }
 
-  /* Centerpiece float layout */
-  .dimension-center {
-    margin-top: 60px !important;
-  }
-
-  .floating-centerpiece {
-    margin: 40px 0;
-  }
 
   /* Workspace sanctuary card */
   .sanctuary-mockup {

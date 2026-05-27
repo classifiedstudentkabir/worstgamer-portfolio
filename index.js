@@ -1,199 +1,172 @@
 // Database containing copy and sections for each edition
 const editionData = {
-  pro: {
-    heroBadgeText: "Available for New Projects",
-    heroHeadline: `I Create Videos That <span class="text-primary" style="font-style: italic;">Hold Attention</span> &amp; Drive Results`,
-    heroDescription: "Cinematic storytelling meets high-retention editing. I transform raw footage into professional narratives that resonate with global audiences.",
-    heroPrimaryCta: "View Work",
+  shorts: {
+    heroBadgeText: "Open for Reels & TikTok Edits",
+    heroHeadline: `High-Retention Vertical Videos That <span class="text-primary" style="font-style: italic;">Stop the Scroll</span>`,
+    heroDescription: "Based in Kharghar, Navi Mumbai, I edit viral short-form content for creators and brands globally. I focus on retention, hook optimization, and clean typography to keep viewers engaged.",
+    heroPrimaryCta: "View Reels",
     heroSecondaryCta: "Hire Me",
-    partnersLabel: "Professional Editing Suite &amp; Tools",
-    portfolioBadge: "Selected Works",
-    portfolioTitle: "Precision in Every Frame",
-    bentoMainTitle: "The Urban Explorer Docu-Series",
-    bentoMainDesc: "How I achieved 1.2M views through rhythmic editing and visual pacing.",
-    bentoC2Badge: "Talking Head Editing",
-    bentoC3Badge: "Brand Commercials",
-    stat1Val: "500+",
-    stat1Label: "Videos Delivered",
-    stat2Val: "12M+",
-    stat2Label: "Total Views",
-    stat3Val: "15+",
-    stat3Label: "Active Clients",
-    stat4Val: "99%",
-    stat4Label: "Satisfaction",
-    servicesBadge: "Specialized Services",
-    servicesTitle: "Built for Impact",
-    service1Title: "Talking Head Editing",
-    service1Desc: "Optimized for LinkedIn, YouTube, and X. I focus on pacing, jump-cut precision, and narrative flow to keep viewers hooked from the first frame.",
-    service1Bullets: ["Dynamic Captions", "Multi-cam Syncing", "Engagement Hooks"],
-    service2Title: "Commercial Motion",
-    service2Desc: "High-end product videos and brand commercials. I blend 2D motion graphics with high-quality sound design for a premium finish.",
-    service2Bullets: ["Color Grading", "Custom Motion GFx", "Sound Mastery"],
-    service3Title: "Viral Short Form",
-    service3Desc: "TikTok, Reels, and Shorts designed for the algorithm. Aggressive pacing and visual retention techniques to boost reach.",
-    service3Bullets: ["9:16 Optimization", "Trending Styles", "Fast Turnaround"],
-    aboutBadge: "About the Creator",
-    aboutTitle: "Mastering the Art of the Cut",
+    partnersLabel: "Editing Software & Assets",
+    portfolioBadge: "Reels Portfolio",
+    portfolioTitle: "Engineered for the Algorithm",
+    bentoMainTitle: "Short-Form Growth Case",
+    bentoMainDesc: "Rhythmic cuts, clean subtitles, sound effects, and zoom-in transitions to double view-through rates.",
+    bentoC2Badge: "Fast Paced",
+    bentoC3Badge: "Sound Design",
+    servicesBadge: "Vertical Editing Services",
+    servicesTitle: "Designed for Reach",
+    service1Title: "Instagram Reels",
+    service1Desc: "High-tempo edits with custom kinetic subtitles, emoji animations, and pattern interrupts to maximize daily viewership.",
+    service1Bullets: ["Kinetic Subtitles", "Sound FX & Swooshes", "Color Correction"],
+    service2Title: "YouTube Shorts",
+    service2Desc: "Optimization for the first 3 seconds (the hook). High-impact visual cues to prevent users from swiping away.",
+    service2Bullets: ["Visual Hooks", "Subtle Text Zooms", "Smooth Transitions"],
+    service3Title: "TikTok Content",
+    service3Desc: "Adapting to daily trending styles and formats. Highly engaging storytelling cuts that spark comments and shares.",
+    service3Bullets: ["Trending Pacing", "Comment Prompts", "Seamless Loops"],
+    aboutBadge: "The Editor",
+    aboutTitle: "Driven by Passion & Rhythm",
     aboutTextContent: `
-      <p>I believe every piece of content is a chance to tell a story that matters. With over 8 years in the cutting room, I've collaborated with industry leaders to refine their digital presence through cinematic precision.</p>
-      <p>My approach isn't just about making things look "cool"—it's about understanding viewer psychology. I analyze retention graphs, study platform trends, and apply classic filmmaking principles to modern digital formats.</p>
-      <p>Based in New York, working globally. I help creators turn complex ideas into digestible, high-impact video assets.</p>
+      <p>I am a passionate video editor based in Kharghar, Navi Mumbai, India, bringing fresh energy and modern styling to short-form video.</p>
+      <p>I study the social media algorithms and understand what keeps viewers watching from start to finish. I work remotely with creators globally to scale their social reach.</p>
     `,
-    aboutStat1Val: "08+",
+    aboutStat1Val: "03+",
     aboutStat1Label: "Years Exp.",
-    aboutStat2Val: "NY",
+    aboutStat2Val: "IND",
     aboutStat2Label: "Location",
-    processBadge: "The Pipeline",
-    processTitle: "From Raw to Refined",
-    processStep1Title: "Strategy &amp; Vision",
-    processStep1Desc: "We align on your goals, target audience, and visual style before the first frame is cut.",
-    processStep2Title: "The Craft",
-    processStep2Desc: "Intensive editing, color grading, and sound design. This is where the magic happens.",
-    processStep3Title: "Final Delivery",
-    processStep3Desc: "Seamless revision cycles and final delivery in all required platform formats.",
-    testimonialQuote: `"Studio Noir transformed our brand's video content. The level of detail and cinematic pacing resulted in a 40% increase in retention. Truly a master of the craft."`,
-    testimonialAuthor: "Alex Sterling",
-    testimonialTitle: "CEO, Sterling Digital",
-    contactHeading: `Let’s Create Something <span class="text-gradient">Cinematic</span>`,
-    contactSubheading: "Ready to elevate your content? Fill out the form or reach out directly via email for high-priority projects.",
+    processBadge: "The Workflow",
+    processTitle: "Simple Remote Process",
+    processStep1Title: "1. Send Footage",
+    processStep1Desc: "Drop your raw files into Google Drive or Frame.io with a brief description.",
+    processStep2Title: "2. Rhythmic Editing",
+    processStep2Desc: "I script the highlights, add dynamic subtitles, sound effects, and color grading.",
+    processStep3Title: "3. Fast Delivery",
+    processStep3Desc: "Get your print-ready video within 24-48 hours, with up to 3 revision rounds.",
+    testimonialQuote: `"Tahhs is incredibly fast and creative. He took my raw talking-head footage and turned it into three engaging Reels that got over 50k views. Highly recommended for shorts!"`,
+    testimonialAuthor: "Rohan Sharma",
+    testimonialTitle: "Tech Content Creator",
+    contactHeading: `Ready to Go <span class="text-gradient">Viral?</span>`,
+    contactSubheading: "Let’s discuss your next campaign or project. Based in Kharghar, working with creators worldwide.",
     formLabelName: "Full Name",
     formLabelEmail: "Email Address",
     formLabelType: "Project Type",
-    formOptions: ["YouTube High-Retention", "Commercial / Brand Video", "Short Form Content", "Documentary Style"],
+    formOptions: ["Short Form Reel", "TikTok Series", "YouTube Short"],
     formLabelDetails: "Project Details",
-    formSubmitBtn: "Send Message",
-    footerCopyright: "© 2024 STUDIO NOIR. ALL RIGHTS RESERVED.",
+    formSubmitBtn: "Let's Edit Your Reels",
+    footerCopyright: "© 2026 TAHHS_EDITS. CRAFTED IN KHARGHAR, INDIA.",
     activeShowcaseId: "showcase-pro"
   },
-  creator: {
-    heroBadgeText: "Inspiring Audiences Everywhere",
-    heroHeadline: `I Build Authentic Connections Through <span class="text-primary" style="font-style: italic;">Human</span> Video Editing`,
-    heroDescription: "I believe editing is visual empathy. I help personal brands and visual creators translate their unique story and values into rhythmic, high-retention video assets.",
-    heroPrimaryCta: "Watch Reels",
-    heroSecondaryCta: "Connect",
-    partnersLabel: "Creative Software &amp; Toolkit",
-    portfolioBadge: "Creator Portfolio",
-    portfolioTitle: "Editing with Empathy &amp; Focus",
-    bentoMainTitle: "Scaling Personal Brands via Reels",
-    bentoMainDesc: "How consistent rhythmic visual storytelling grew a creator network by 450k followers.",
-    bentoC2Badge: "Storytelling Style",
-    bentoC3Badge: "Creator Aesthetics",
-    stat1Val: "500+",
-    stat1Label: "Videos Delivered",
-    stat2Val: "12M+",
-    stat2Label: "Total Views",
-    stat3Val: "15+",
-    stat3Label: "Active Clients",
-    stat4Val: "99%",
-    stat4Label: "Satisfaction",
-    servicesBadge: "Creative Services",
-    servicesTitle: "Built for Creators",
-    service1Title: "Brand Documentaries",
-    service1Desc: "Deep dive video profiles that establish trust. High-fidelity editing focused on authenticity, pacing, and emotional resonance.",
-    service1Bullets: ["Subject Interview Cuts", "Visual Pacing &amp; Rhythm", "Soundtrack Layering"],
-    service2Title: "Social Growth Pack",
-    service2Desc: "High-retention shorts, reels, and TikTok edits tailored to platform algorithms while preserving your core voice.",
-    service2Bullets: ["Dynamic Captioning", "Pattern Interrupts", "Interactive Overlay Graphics"],
-    service3Title: "Vlog Cinematic Polish",
-    service3Desc: "Turning raw vlog footage into cinematic journeys. We add style, grading, and structural hooks that keep viewers coming back.",
-    service3Bullets: ["Color Grading Presets", "Sound FX Design", "Narrative Structuring"],
-    aboutBadge: "Your Creative Partner",
-    aboutTitle: "Connecting with Your Audience",
+  youtube: {
+    heroBadgeText: "Long-Form Specialist",
+    heroHeadline: `Engaging YouTube Videos That <span class="text-primary" style="font-style: italic;">Build Audiences</span>`,
+    heroDescription: "Editing talking head vlogs, tutorial reviews, and documentary-style videos. I ensure your audience stays hooked for the full 10+ minutes.",
+    heroPrimaryCta: "Watch Vlogs",
+    heroSecondaryCta: "Hire Me",
+    partnersLabel: "Editing Software & Assets",
+    portfolioBadge: "YouTube Portfolio",
+    portfolioTitle: "Vlogs & Talking Head",
+    bentoMainTitle: "Docu-Style Pacing",
+    bentoMainDesc: "Blending background music, B-rolls, and clear audio enhancements to tell compelling stories.",
+    bentoC2Badge: "A-Roll Cleanups",
+    bentoC3Badge: "B-Roll Overlay",
+    servicesBadge: "Long-Form Services",
+    servicesTitle: "Built for Retention",
+    service1Title: "Vlog Editing",
+    service1Desc: "Smoothing out transitions, organizing narrative flow, color grading, and integrating soundscapes to make your vlogs cinematic.",
+    service1Bullets: ["Cinematic Color Grade", "Ambient Sound Design", "Dynamic Text Titles"],
+    service2Title: "Talking Head & Tutorials",
+    service2Desc: "Trimming dead space, cleaning background noise, and adding relevant B-roll and zooms to keep educational content lively.",
+    service2Bullets: ["Audio Noise Cleanup", "Screen Recording Sync", "Lower Thirds"],
+    service3Title: "Documentary Style",
+    service3Desc: "Rhythmic storytelling with maps, news clippings, graphics, and heavy archival overlays for deep-dive topics.",
+    service3Bullets: ["Storyboarding Assistance", "Graphic Overlay Maps", "Sound FX Mix"],
+    aboutBadge: "The Editor",
+    aboutTitle: "Mastering Long-Form Engagement",
     aboutTextContent: `
-      <p>I believe editing is about human psychology. It is about when to breathe, when to hold, and when to speed up to mimic the natural rhythm of human conversation.</p>
-      <p>With 8 years of personal brand editing, I have developed editing systems that emphasize personality over generic flashing graphics. My style is transparent yet powerful, ensuring the creator always shines.</p>
-      <p>Working out of my Brooklyn workspace, serving visionaries globally. Let's make content that builds your legacy.</p>
+      <p>Long-form editing requires a deep understanding of pacing and viewer fatigue. Based in Kharghar, Navi Mumbai, I structure vlogs and tutorials to retain attention through music transitions, graphic inserts, and narrative storytelling.</p>
+      <p>I make sure your content remains high-quality from start to finish, keeping viewer retention high for the algorithm.</p>
     `,
-    aboutStat1Val: "08+",
+    aboutStat1Val: "03+",
     aboutStat1Label: "Years Exp.",
-    aboutStat2Val: "BK",
-    aboutStat2Label: "Workspace",
-    processBadge: "The Workflow",
-    processTitle: "Vision to Rhythmic Edit",
-    processStep1Title: "Vision Alignment",
-    processStep1Desc: "We jump on a call to unpack your story, tone of voice, and visual benchmarks.",
-    processStep2Title: "Creative Edit",
-    processStep2Desc: "Transforming raw footage into a rhythmic narrative with matching overlays and grading.",
-    processStep3Title: "Refined Launch",
-    processStep3Desc: "Final pacing reviews and delivery, ready to inspire and connect with your audience.",
-    testimonialQuote: `"The human-centered pacing of their editing changed everything. Our audience does not just watch our videos; they feel connected to our mission. Essential partner."`,
-    testimonialAuthor: "Sarah Vance",
-    testimonialTitle: "Founder, Creator Labs",
-    contactHeading: `Let's Build Something <span class="text-gradient">Authentic</span>`,
-    contactSubheading: "Ready to share your vision? I'd love to hear about what you're building and help you tell your story.",
+    aboutStat2Val: "IND",
+    aboutStat2Label: "Location",
+    processBadge: "The Pipeline",
+    processTitle: "From Raw to Refined",
+    processStep1Title: "1. Story & Style",
+    processStep1Desc: "We define the pacing, music taste, and overall narrative structure of your video.",
+    processStep2Title: "2. The Rough Cut",
+    processStep2Desc: "I assemble the timeline, clean up audio, and insert B-rolls and graphics.",
+    processStep3Title: "3. Final Polish",
+    processStep3Desc: "Sound design, final color correction, and exporting in high-resolution 4K.",
+    testimonialQuote: `"Tahhs completely understood my vlog's vibe. He structured the timeline perfectly and kept the audience engaged for the entire 12 minutes. Best freelance editor I've worked with!"`,
+    testimonialAuthor: "Anjali Mehta",
+    testimonialTitle: "Travel Blogger",
+    contactHeading: `Elevate Your <span class="text-gradient">Channel</span>`,
+    contactSubheading: "Let’s collaborate on a long-term editing schedule for your YouTube channel.",
     formLabelName: "Your Name",
     formLabelEmail: "Your Email",
-    formLabelType: "What can I help with?",
-    formOptions: ["Story-Driven Editing", "Brand Video / Visual Identity", "Creator Content (Short Form)", "A New Idea!"],
-    formLabelDetails: "Your Vision",
-    formSubmitBtn: "Connect With Me",
-    footerCopyright: "© 2024 STUDIO NOIR. BUILT FOR CREATORS.",
+    formLabelType: "Video Type Needed",
+    formOptions: ["YouTube Vlog", "Educational Video", "Docu-series"],
+    formLabelDetails: "Your Channel & Details",
+    formSubmitBtn: "Start Editing YouTube",
+    footerCopyright: "© 2026 TAHHS_EDITS. CRAFTED IN KHARGHAR, INDIA.",
     activeShowcaseId: "showcase-creator"
   },
-  fresher: {
-    heroBadgeText: "Inspiring Creators Worldwide",
-    heroHeadline: `Your Journey to Cinematic <span class="text-primary" style="font-style: italic;">Excellence</span> Starts Here`,
-    heroDescription: "Every great creator started with a single frame. I'm here to help you bridge the gap between your vision and professional reality with editing that honors your unique voice.",
-    heroPrimaryCta: "See What's Possible",
-    heroSecondaryCta: "Let's Chat",
-    partnersLabel: "Editing Software &amp; Tools I Master",
-    portfolioBadge: "Creative Potential",
-    portfolioTitle: "Showcasing Your Best Work",
-    bentoMainTitle: "Finding Your Narrative",
-    bentoMainDesc: "I help you find the rhythm in your footage that speaks to your audience. It's about more than just cuts; it's about your story's soul.",
-    bentoC2Badge: "Creative Potential",
-    bentoC3Badge: "Creative Potential",
-    stat1Val: "500+",
-    stat1Label: "Stories Told",
-    stat2Val: "12M+",
-    stat2Label: "Lives Touched",
-    stat3Val: "15+",
-    stat3Label: "Partnerships",
-    stat4Val: "99%",
-    stat4Label: "Happy Clients",
-    servicesBadge: "Creative Services",
-    servicesTitle: "Find Your Voice",
-    service1Title: "Finding Your Narrative",
-    service1Desc: "I help you find the rhythm in your footage that speaks to your audience. It's about more than just cuts; it's about your story's soul.",
-    service1Bullets: ["Modern Captions", "Seamless Syncing", "Emotional Hooks"],
-    service2Title: "Polishing Your Identity",
-    service2Desc: "Professional grading and motion that doesn't feel manufactured. We'll build a look that feels authentically yours.",
-    service2Bullets: ["Natural Grading", "Elegant Motion", "Immersive Sound"],
-    service3Title: "Growing Your Community",
-    service3Desc: "Turn your ideas into scroll-stopping shorts. We focus on hooks that matter to your viewers and keep them coming back.",
-    service3Bullets: ["Vertical Layouts", "Fresh Aesthetics", "Quick Turnaround"],
-    aboutBadge: "Your Creative Partner",
-    aboutTitle: "Growing Together, Shot by Shot",
+  promos: {
+    heroBadgeText: "Commercial & Event Promos",
+    heroHeadline: `Cinematic Promo Videos That <span class="text-primary" style="font-style: italic;">Convert Viewers</span>`,
+    heroDescription: "Freelance editor from Kharghar, Navi Mumbai, editing high-energy event recaps, corporate promos, and product ads that leave an impression.",
+    heroPrimaryCta: "Watch Promos",
+    heroSecondaryCta: "Book a Promo",
+    partnersLabel: "Editing Software & Assets",
+    portfolioBadge: "Promo Portfolio",
+    portfolioTitle: "Impactful Promos",
+    bentoMainTitle: "High-Energy Ads",
+    bentoMainDesc: "Combining sound design, visual overlays, and beat-matched cuts for modern commercial aesthetic.",
+    bentoC2Badge: "Ad Strategy",
+    bentoC3Badge: "Visual Effects",
+    servicesBadge: "Promo Services",
+    servicesTitle: "High Impact Edits",
+    service1Title: "Event Highlight Recaps",
+    service1Desc: "Dynamic pacing, beat-matching cuts, and speed ramps that bring the energy of your live event to life.",
+    service1Bullets: ["Beat-Sync Cuts", "Speed Ramping", "Logo Overlay Animations"],
+    service2Title: "Product Ads",
+    service2Desc: "Premium product commercials with smooth transitions, modern typography, and color grading that highlight quality.",
+    service2Bullets: ["Product Color Pop", "Text Title Overlays", "Cinematic Grading"],
+    service3Title: "Business Promos",
+    service3Desc: "High-quality introductory videos for startups and local businesses to showcase their services and team.",
+    service3Bullets: ["Corporate Audio Mix", "Subtitle Integration", "CTA End Screen"],
+    aboutBadge: "The Editor",
+    aboutTitle: "Cinematic Pacing for Brands",
     aboutTextContent: `
-      <p>I remember the mixed excitement and nerves of that first edit—the drive to make something meaningful. That's why I'm not just an editor; I'm here to be a mentor and partner in your growth.</p>
-      <p>Today, I help emerging creators find their footing in the industry. Whether you're mastering your first series or refining your brand, we'll navigate the creative journey together.</p>
-      <p>My mission is to provide the professional polish you need while ensuring your original creative spark remains at the heart of every frame.</p>
+      <p>Every brand and event has a unique rhythm. Working from Kharghar, I mix modern visual transitions with premium sound design to create promo videos that grab attention immediately.</p>
+      <p>Whether you need a product ad or an event highlights reel, I make sure it looks high-production and fits your brand guidelines.</p>
     `,
-    aboutStat1Val: "08+",
+    aboutStat1Val: "03+",
     aboutStat1Label: "Years Exp.",
-    aboutStat2Val: "NY",
-    aboutStat2Label: "Working Globally",
-    processBadge: "Our Journey",
-    processTitle: "From Vision to Reality",
-    processStep1Title: "Discovery",
-    processStep1Desc: "We chat about your dreams, your audience, and the feeling you want to create.",
-    processStep2Title: "The Craft",
-    processStep2Desc: "Thoughtful editing and sound design to bring your story to life with heart and precision.",
-    processStep3Title: "Celebration",
-    processStep3Desc: "A seamless delivery of your project, ready to inspire and connect with your viewers.",
-    testimonialQuote: `"I help you find the rhythm in your footage that speaks to your audience. It's about more than just cuts; it's about your story's soul."`,
-    testimonialAuthor: "Alex Sterling",
-    testimonialTitle: "Founder, Sterling Digital",
-    contactHeading: `Let’s Create Together <span class="text-gradient">Inspiration</span>`,
-    contactSubheading: "Ready to share your vision? I'd love to hear about what you're building and help you tell your story.",
+    aboutStat2Val: "IND",
+    aboutStat2Label: "Location",
+    processBadge: "The Pipeline",
+    processTitle: "The Promo Pipeline",
+    processStep1Title: "1. Creative Brief",
+    processStep1Desc: "We define the goal, visual style, and target call to action of the promo.",
+    processStep2Title: "2. Dynamic Cut",
+    processStep2Desc: "I sync the video to the soundtrack, add typography, SFX, and color styling.",
+    processStep3Title: "3. Launch Ready",
+    processStep3Desc: "Final delivery in optimal formats for social ads, website backgrounds, or presentations.",
+    testimonialQuote: `"We hired Tahhs for our cafe's launch highlights video in Navi Mumbai. The video was edited beautifully, synchronized perfectly to the music, and delivered within 2 days!"`,
+    testimonialAuthor: "Kabir Patil",
+    testimonialTitle: "Co-Founder, Brew & Bite Cafe",
+    contactHeading: `Create a <span class="text-gradient">Cinematic Promo</span>`,
+    contactSubheading: "Let’s build an impactful promo video for your business or next event.",
     formLabelName: "Your Name",
     formLabelEmail: "Your Email",
-    formLabelType: "What can I help with?",
-    formOptions: ["Story-Driven Editing", "Brand Video / Visual Identity", "Creator Content (Short Form)", "A New Idea!"],
-    formLabelDetails: "Your Vision",
-    formSubmitBtn: "Connect With Me",
-    footerCopyright: "© 2024 STUDIO NOIR. BUILT FOR CREATORS.",
-    activeShowcaseId: "showcase-creator"
+    formLabelType: "Video Type Needed",
+    formOptions: ["Event Highlight Reel", "Product Ad Video", "Business Promo"],
+    formLabelDetails: "Tell me about your footage",
+    formSubmitBtn: "Start Editing Promos",
+    footerCopyright: "© 2026 TAHHS_EDITS. CRAFTED IN KHARGHAR, INDIA.",
+    activeShowcaseId: "showcase-pro"
   }
 };
 
@@ -409,23 +382,39 @@ const videoPlayerContainer = document.getElementById('video-player-container');
 const openVideoModal = (videoUrl) => {
   playSound('camera');
   
-  // Format YouTube embeds safely
-  let embedUrl = videoUrl;
-  if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be') || videoUrl.includes('embed/')) {
-    if (!videoUrl.includes('embed/')) {
-      const videoId = videoUrl.split('v=')[1] || videoUrl.split('/').pop();
-      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+  let contentHtml = '';
+  
+  // Check if it's a direct web video file
+  if (videoUrl.endsWith('.mp4') || videoUrl.endsWith('.webm') || videoUrl.endsWith('.ogg') || videoUrl.includes('sample/')) {
+    contentHtml = `
+      <video 
+        src="${videoUrl}" 
+        autoplay 
+        controls 
+        playsinline 
+        style="width: 100%; height: 100%; object-fit: contain; background: #000; border: none; display: block;">
+      </video>
+    `;
+  } else {
+    // Format YouTube embeds safely
+    let embedUrl = videoUrl;
+    if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be') || videoUrl.includes('embed/')) {
+      if (!videoUrl.includes('embed/')) {
+        const videoId = videoUrl.split('v=')[1] || videoUrl.split('/').pop();
+        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+      }
     }
+    contentHtml = `
+      <iframe 
+        src="${embedUrl}?autoplay=1&mute=0&rel=0" 
+        title="Video player" 
+        allow="autoplay; encrypted-media; fullscreen" 
+        allowfullscreen>
+      </iframe>
+    `;
   }
   
-  videoPlayerContainer.innerHTML = `
-    <iframe 
-      src="${embedUrl}?autoplay=1&mute=0&rel=0" 
-      title="Video player" 
-      allow="autoplay; encrypted-media; fullscreen" 
-      allowfullscreen>
-    </iframe>
-  `;
+  videoPlayerContainer.innerHTML = contentHtml;
   
   videoModal.classList.add('active');
   videoModal.setAttribute('aria-hidden', 'false');
@@ -511,14 +500,6 @@ const switchEdition = (editionKey) => {
     bentoMainDesc: document.getElementById('bento-main-desc'),
     bentoC2Badge: document.getElementById('bento-c2-badge'),
     bentoC3Badge: document.getElementById('bento-c3-badge'),
-    stat1Val: document.getElementById('stat-1-val'),
-    stat1Label: document.getElementById('stat-1-label'),
-    stat2Val: document.getElementById('stat-2-val'),
-    stat2Label: document.getElementById('stat-2-label'),
-    stat3Val: document.getElementById('stat-3-val'),
-    stat3Label: document.getElementById('stat-3-label'),
-    stat4Val: document.getElementById('stat-4-val'),
-    stat4Label: document.getElementById('stat-4-label'),
     servicesBadge: document.getElementById('services-badge'),
     servicesTitle: document.getElementById('services-title'),
     service1Title: document.getElementById('service-1-title'),
@@ -592,14 +573,6 @@ const switchEdition = (editionKey) => {
     if (elements.bentoC2Badge) elements.bentoC2Badge.textContent = data.bentoC2Badge;
     if (elements.bentoC3Badge) elements.bentoC3Badge.textContent = data.bentoC3Badge;
     
-    if (elements.stat1Val) elements.stat1Val.textContent = data.stat1Val;
-    if (elements.stat1Label) elements.stat1Label.textContent = data.stat1Label;
-    if (elements.stat2Val) elements.stat2Val.textContent = data.stat2Val;
-    if (elements.stat2Label) elements.stat2Label.textContent = data.stat2Label;
-    if (elements.stat3Val) elements.stat3Val.textContent = data.stat3Val;
-    if (elements.stat3Label) elements.stat3Label.textContent = data.stat3Label;
-    if (elements.stat4Val) elements.stat4Val.textContent = data.stat4Val;
-    if (elements.stat4Label) elements.stat4Label.textContent = data.stat4Label;
 
     if (elements.servicesBadge) elements.servicesBadge.textContent = data.servicesBadge;
     if (elements.servicesTitle) elements.servicesTitle.textContent = data.servicesTitle;
@@ -671,25 +644,22 @@ const switchEdition = (editionKey) => {
     // Swap images / play previews depending on edition
     const shootBtnsText = document.querySelectorAll('.btn-text-play');
     shootBtnsText.forEach(btnText => {
-      btnText.textContent = (editionKey === 'pro') ? 'Play Preview' : 'Watch Story';
+      btnText.textContent = (editionKey === 'youtube') ? 'Watch Story' : 'Play Preview';
     });
 
     const aboutImg = document.getElementById('about-img');
     if (aboutImg) {
-      // In emerging creator mode, load the friendly smiling portrait, else load the focused dim-lit editor desk
-      aboutImg.src = (editionKey === 'fresher') 
-        ? "https://lh3.googleusercontent.com/aida/ADBb0uh9ka8AH35201XuHzS8Jz9JdmhfgZqQj0f2_q1KXTdGOJz5b-zMITfuYtasIMKuMx0bAPGD_bBLq_hImkEw12XrecXWEBkXUq-zcsuVZbUWJSmHCtNxQQR223yFSoRhzI66w1Voo0JXLQRQoJGT2f6XafKDHiOjryFQIjKHcG7rEPkXaEX9Mm7RwkZyBuH3PiERFmDmKNz5KVigEoBQOO2ckF_5Uo0da3fpBGtzqeMV9SR2_Qr9oxQpvPY"
-        : "https://lh3.googleusercontent.com/aida-public/AB6AXuBxKYwg9dtrxohyGRw_AjIRK5w7Pb-oebhlQAB9Xw1PVfwFG_TF1mfJlSI6DP4PgHdbR6tGdKhv8JlW5zd8_072aq7-t_DuT-8CpNUsTgFFkF6FJoooN6nZgXRnv9hU-MSJXycF0_bKyF7xENj27xd2arel2KNWG-iC2hg3KGiKeQ9u3A9irS-ZlQsmrR6vrbR10aD0GCoj1uuptv2urCrkOC4TAJwP69ziFg1RxE9Wa2ojhqQRjoVcm9MhwFPmtZzAtXAWnjrceJCY";
+      aboutImg.src = "./img/1000018279.jpg";
     }
 
-    // Dynamic show/hide Hire Me Button in Nav depending on screen spacing
+    // Keep Hire Me Buttons visible
     const navHireBtn = document.getElementById('nav-hire-btn');
     if (navHireBtn) {
-      navHireBtn.style.display = (editionKey === 'pro') ? 'block' : 'none';
+      navHireBtn.style.display = 'block';
     }
     const mobileHireBtn = document.getElementById('mobile-hire-btn');
     if (mobileHireBtn) {
-      mobileHireBtn.style.display = (editionKey === 'pro') ? 'block' : 'none';
+      mobileHireBtn.style.display = 'block';
     }
 
     // Fade-in dynamic containers
@@ -780,12 +750,97 @@ document.addEventListener('mousemove', (e) => {
   }
 });
 
+// Real-Time Contact Form Submission Handler via FormSubmit AJAX API
+const setupFormSubmission = () => {
+  const form = document.getElementById('portfolio-form');
+  if (!form) return;
+
+  // Status message container element
+  let statusEl = document.getElementById('form-status');
+  if (!statusEl) {
+    statusEl = document.createElement('div');
+    statusEl.id = 'form-status';
+    statusEl.style.marginTop = '16px';
+    statusEl.style.padding = '12px';
+    statusEl.style.borderRadius = '8px';
+    statusEl.style.fontSize = '14px';
+    statusEl.style.display = 'none';
+    statusEl.style.textAlign = 'center';
+    statusEl.style.fontWeight = '500';
+    statusEl.style.transition = 'all 0.3s ease';
+    form.appendChild(statusEl);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    playSound('click');
+
+    const submitBtn = document.getElementById('form-submit-btn');
+    const originalBtnText = submitBtn.textContent;
+
+    // Set loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.style.opacity = '0.7';
+
+    statusEl.style.display = 'none';
+    statusEl.className = '';
+
+    const formData = new FormData(form);
+    
+    // Add custom subject header dynamically
+    const selectedType = document.getElementById('form-input-type').value;
+    formData.append('_subject', `New Project Inquiry: ${selectedType}`);
+    
+    // Uses FormSubmit AJAX Endpoint (sends messages directly to your email)
+    const email = 'tahhs.edits@gmail.com';
+    const endpoint = `https://formsubmit.co/ajax/${email}`;
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success === 'true') {
+        playSound('camera');
+        
+        statusEl.style.display = 'block';
+        statusEl.style.background = 'rgba(77, 238, 144, 0.1)';
+        statusEl.style.border = '1px solid rgba(77, 238, 144, 0.3)';
+        statusEl.style.color = '#4eed90';
+        statusEl.textContent = 'Inquiry sent successfully! I will get back to you shortly.';
+        
+        form.reset();
+      } else {
+        throw new Error(result.message || 'Something went wrong.');
+      }
+    } catch (error) {
+      console.error(error);
+      statusEl.style.display = 'block';
+      statusEl.style.background = 'rgba(255, 77, 77, 0.1)';
+      statusEl.style.border = '1px solid rgba(255, 77, 77, 0.3)';
+      statusEl.style.color = '#ff4d4d';
+      statusEl.textContent = 'Failed to send message. Please try reaching out directly via email.';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalBtnText;
+      submitBtn.style.opacity = '';
+    }
+  });
+};
+
 // Page Initialization
 document.addEventListener('DOMContentLoaded', () => {
-  // Populate the default Pro edition selector values
+  // Populate the default Shorts edition selector values
   const selectEl = document.getElementById('form-input-type');
   if (selectEl) {
-    selectEl.innerHTML = editionData.pro.formOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('');
+    selectEl.innerHTML = editionData.shorts.formOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('');
   }
   
   setupScrollReveal();
@@ -793,4 +848,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCardTilts();
   setupMagneticButtons();
   setupShootCardClicks();
+  setupFormSubmission();
 });
