@@ -355,8 +355,30 @@ const setupCardTilts = () => {
       inner.style.transform = `rotateX(0deg) rotateY(0deg)`;
     });
     
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (e) => {
       playSound('camera');
+      const playBtn = card.querySelector('[data-video]');
+      if (playBtn && e.target !== playBtn && !playBtn.contains(e.target)) {
+        e.stopPropagation();
+        openVideoModal(playBtn.getAttribute('data-video'));
+      }
+    });
+  });
+};
+
+// Shoot Cards Full-Click Usability
+const setupShootCardClicks = () => {
+  const shootCards = document.querySelectorAll('.shoot-card');
+  shootCards.forEach(card => {
+    if (card.dataset.clickSetup) return;
+    card.dataset.clickSetup = 'true';
+    
+    card.addEventListener('click', (e) => {
+      const playBtn = card.querySelector('[data-video]');
+      if (playBtn && e.target !== playBtn && !playBtn.contains(e.target)) {
+        e.stopPropagation();
+        openVideoModal(playBtn.getAttribute('data-video'));
+      }
     });
   });
 };
@@ -690,6 +712,7 @@ const switchEdition = (editionKey) => {
     setupModalTriggers();
     setupMagneticButtons();
     setupCardTilts();
+    setupShootCardClicks();
 
   }, 400);
 };
@@ -769,4 +792,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupModalTriggers();
   setupCardTilts();
   setupMagneticButtons();
+  setupShootCardClicks();
 });
