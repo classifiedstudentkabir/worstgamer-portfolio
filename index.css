@@ -226,6 +226,22 @@ nav {
   transition: all 0.3s ease;
 }
 
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-logo[src=""], .brand-logo:not([src]) {
+  display: none;
+}
+
 @media (min-width: 768px) {
   nav {
     padding: 20px var(--margin-desktop);
